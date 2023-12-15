@@ -56,41 +56,6 @@ html {
     position: absolute;
     left: 50%;
 }
-/* dark mood btn */
-#sidebar button {
-    border:none;
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: -59px;
-    transform: translateY(-50%);
-    right: -178px;
-    cursor: pointer;
-    background: none;
-}
-#sidebar button:hover::before{
-    content: "dark mood";
-    border-color: transparent;
-    border-width: 5px;
-    border-style: solid;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 27px;
-    background-color: #f1f5f961;
-    height: 20px;
-    bottom: -39px;
-    right: -8px;
-    padding: 3px 12px;
-    border-radius: 8px;
-    font-size: 12px;
-}
-#sidebar button svg{
-    position: absolute;
-    left:2px;
-    top: 2px;
-    fill:#19547b;
-}
 ul {
     list-style: none;
     padding: 0;
