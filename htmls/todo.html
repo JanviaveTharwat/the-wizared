@@ -10,17 +10,12 @@
         <link rel="stylesheet" href="../css/all.min.css">
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/todo.css">
+        <link rel="stylesheet" href="../css/notes.css">
     </head>
     <body>
         <div class="full_page">
             <div id="sidebar">
                 <h3>applications</h3>
-                <button class="abc" aria-label="dark-mood">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/>
-                    </svg>
-                </button>
                 <ul id="nv">
                     <li>
                         <a href="../index.html" class="btnv">
@@ -72,20 +67,25 @@
                     <h1 class="title"> The WIZARD</h1>
                 </div>
                 <section id="todo">
-                    <h2><img src="../images/todo.png" > To DO list</h2>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/>
-                        </svg>
-                        add to list
-                    </button>
-                    <p contenteditable="true" class="inputs">
-                        <img src="../images/trash-can_9057685.png">
-                    </p>
-                </section>
-            </div>
-        </div>
+                    <h2>
+                        <img src="../images/todo.png" >
+                        To DO list</h2>
+                    <main class="app">
+                        <div class="input-header">
+                        <h1>
+                            <span id="date"></span>
+                        </h1>
+
+                            <input type="text" id="item" placeholder="Enter a task...">
+                            <button id="enter">Enter</button>
+                        
+                        </div>
+                        <div class="to-do-list">
+                            
+                        </div>
+                    </main>
+                    </section>
+                    </div>
         <button  onclick="topFunction()" id="back_to_top">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
             <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -93,6 +93,6 @@
         </svg>
         </button>
         <script src="../scripts/script.js"></script>
-        <script src="../scripts/todo.js"></script>
+        <script src="../scripts/script_todo.js"></script>
     </body>
 </html>
